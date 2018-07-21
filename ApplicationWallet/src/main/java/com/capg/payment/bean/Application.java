@@ -2,26 +2,35 @@ package com.capg.payment.bean;
 
 public class Application {
 	private String customerName;
-	private long phoneNumber;
+	private int age;
+	private String gender;
+	private String phoneNumber;
 	private String emailId;
-	private long aadharNumber;
-	private String address;
-	private long accountNumber;
+	private String aadharNumber;
 	private String password;
-	private long transId;
-	private long customerId;
-	private double amount;
-	private double balance;
+	private String username;
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
 	public String getCustomerName() {
 		return customerName;
 	}
 	public void setCustomerName(String customerName) {
 		this.customerName = customerName;
 	}
-	public long getPhoneNumber() {
+	public String getPhoneNumber() {
 		return phoneNumber;
 	}
-	public void setPhoneNumber(long phoneNumber) {
+	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 	public String getEmailId() {
@@ -30,60 +39,32 @@ public class Application {
 	public void setEmailId(String emailId) {
 		this.emailId = emailId;
 	}
-	public long getAadharNumber() {
+	public String getAadharNumber() {
 		return aadharNumber;
 	}
-	public void setAadharNumber(long aadharNumber) {
+	public void setAadharNumber(String aadharNumber) {
 		this.aadharNumber = aadharNumber;
-	}
-	public String getAddress() {
-		return address;
-	}
-	public void setAddress(String address) {
-		this.address = address;
-	}
-	public long getAccountNumber() {
-		return accountNumber;
-	}
-	public void setAccountNumber(long accountNumber) {
-		this.accountNumber = accountNumber;
 	}
 	public String getPassword() {
 		return password;
 	}
 	public void setPassword(String password) {
-		this.password=password;
+		this.password = password;
 	}
-	public long getTransId() {
-		return transId;
+	public String getUsername() {
+		return username;
 	}
-	public void setTransId(long transId) {
-		this.transId = transId;
-	}
-	public long getCustomerId() {
-		return customerId;
-	}
-	public void setCustomerId(long customerId) {
-		this.customerId = customerId;
-	}
-	public double getAmount() {
-		return amount;
-	}
-	public void setAmount(double amount) {
-		this.amount = amount;
-	}
-	public double getBalance() {
-		return balance;
-	}
-	public void setBalance(double balance) {
-		this.balance = balance;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 	@Override
 	public String toString() {
-		return "ApplicationPage [customerName=" + customerName + ", phoneNumber=" + phoneNumber + ", emailId=" + emailId
-				+ ", aadharNumber=" + aadharNumber + ", address=" + address + ", accountNumber=" + accountNumber
-				+ ", transId=" + transId + ", customerId=" + customerId + ", amount=" + amount + ", balance=" + balance
-				+ "]";
+		return "Application [customerName=" + customerName + ", phoneNumber=" + phoneNumber + ", emailId=" + emailId
+				+ ", aadharNumber=" + aadharNumber + ", password=" + password + ", username=" + username + "]";
 	}
+	
 
+	
+	
+	
 }

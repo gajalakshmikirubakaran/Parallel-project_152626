@@ -1,6 +1,13 @@
 package com.capg.payment.service;
 
+import com.capg.payment.bean.Application;
+import java.util.ArrayList;
+import java.util.List;
+
 public class ValidateApplicationService {
+	Application app=new Application();
+	List<Application> list = new ArrayList<Application>();
+
 	public boolean validatecustomerName(String customerName) {
 		if(customerName.length()>4)
 			return true;
@@ -28,9 +35,51 @@ public class ValidateApplicationService {
 		else return false;
 	}
 	public boolean validateemailId(String emailId) {
-		// TODO Auto-generated method stub
-		return false;
+		if(emailId.endsWith(".com"))
+		{
+			
+			return true;
+		}
+		
+		else {
+			System.err.println("invalid email id");
+			return false;
+			
+		}
+		
 	}
+	public boolean validategender(String gender) {
+		
+		if((gender.equals("male"))||(gender.equals("female"))) {
+			
+			return true;
+		}else
+		{
+			System.err.println("invalid gender");
+			return false;
+		}
+
+	
+		
+	}
+	public boolean validateage(int age) {
+		
+		if(age>0) {
+			
+			return true;
+		}else
+		{
+			System.err.println("invalid age entry");
+			return false;
+		}
+}
+}
+		
+	
 	
 
-}
+
+	
+		
+	
+
